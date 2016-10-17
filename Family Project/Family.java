@@ -13,7 +13,6 @@ public class Family
   Person husband;
   Person wife;
   Person child;
-  Person baby;
   
   //Set family name and set people as husband and wife
   public Family(String surname, Person husband, Person wife)
@@ -39,19 +38,18 @@ public class Family
   public Person getChild()
   {return child;}
   
-  /* THIS IS BUGGED */
+  //Sets 'Person' object as the child, and prints the first name.
   public void haveChild(Person child)
   {
-      System.out.println(child + " is born.");
+      System.out.println(child.getFirstName() + " is born.");
       this.child = child;
   }
   
-  /* THIS IS BUGGED */
+  //Creates new 'Person' Child, however id doesn't appear in the work area, child exists.
   public void haveChild(String firstName, String middleName, boolean isMale)
   {
-      Person baby;
-      System.out.println(firstName + " is born.");
-      child = this.baby;
+      System.out.println(firstName.trim().toUpperCase() + " is born.");
+      this.child = new Person(firstName, middleName, isMale);
   }
   
   //Increase age of all family members
@@ -71,13 +69,9 @@ public class Family
   public void printChild()
   {
       if(child != null)
-      {
-          System.out.println("The " + surname + " family " + child.getGender() + " child is: " + child.getFirstName() + " " + child.getmiddleName() + " (" + child.getAge() + ")");
-      }
+      {System.out.println("The " + surname + " family " + child.getGender() + " child is: " + child.getFirstName() + " " + child.getmiddleName() + " (" + child.getAge() + ")");}
       else
-      {
-          System.out.println("THere is no child in the " + surname + " family.");
-      }
+      {System.out.println("THere is no child in the " + surname + " family.");}
   }
   
   //Prints the initials of the family members
