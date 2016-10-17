@@ -20,9 +20,19 @@ public class ShoppingTrip
         foods = new ArrayList();
     }
     
+    //Returns the number of food
     public int getNumberOfFoods()
     {
         return foods.size();
     }
     
+    public String addFood()
+    {
+        
+    }
+    
+    public String removeFood()
+    {
+        
+    }
 }
