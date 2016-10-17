@@ -26,13 +26,22 @@ public class ShoppingTrip
         return foods.size();
     }
     
-    public String addFood()
+    //Adds food to Array
+    public void addFood(String foodName)
     {
-        
+        foods.add(foodName);
     }
     
-    public String removeFood()
+    //Removes food from Array
+    public void removeFood(int index)
     {
-        
+        if(index >= 0 & index < foods.size())
+        {
+            foods.remove(index);
+        }
+        else
+        {
+            System.out.println("NO food found at index " + index);
+        }
     }
 }
