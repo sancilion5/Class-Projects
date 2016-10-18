@@ -17,12 +17,11 @@ public class ShoppingTrip
     public ShoppingTrip()
     {
         //New Foods Array Instance
-        foods = new ArrayList();        
+        foods = new ArrayList<String>();        
     }
     
     public void QuickList()
     {
-        ArrayList<String> foods = new ArrayList<>();
         foods.add("Shrimp Scampi");
         foods.add("Popcorn Shrimp");
         foods.add("Chicken");
@@ -91,10 +90,9 @@ public class ShoppingTrip
     public void listFoodMatching(String searchFood)
    {
     boolean noMatch = true;  
-    
     for(String foodName : foods)
     {
-        if(foodName.toUpperCase().contains(searchFood))
+        if(foodName.toUpperCase().contains(searchFood.toUpperCase()))
         {
             System.out.println("Food: " + foodName);
             noMatch = false;
