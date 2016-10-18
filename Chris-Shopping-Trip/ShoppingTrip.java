@@ -83,6 +83,7 @@ public class ShoppingTrip
     {
         if(foodName.toUpperCase().contains(searchFood))
         {
+            System.out.println("Food items:");
             System.out.println("Food: " + foodName);
             noMatch = false;
         }
