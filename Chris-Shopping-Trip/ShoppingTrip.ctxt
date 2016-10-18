@@ -13,4 +13,6 @@ comment4.params=index
 comment4.target=void\ listFood(int)
 comment5.params=
 comment5.target=void\ listAllFoods()
-numComments=6
+comment6.params=searchFood
+comment6.target=void\ listFoodMatching(java.lang.String)
+numComments=7

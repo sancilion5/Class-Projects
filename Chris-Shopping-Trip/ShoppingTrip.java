@@ -75,31 +75,21 @@ public class ShoppingTrip
         }
    }
    
-   public int listFoodMatching(String searchFood)
+   public void listFoodMatching(String searchFood)
    {
-       int index = 0;
-       boolean noMatch = true;
-       
-       while(noMatch && index < foods.size())
-       {
-           if(foodname.contains(searchFood))
-           {
-               noMatch = false;
-           }
-           else
-           {
-               index++;
-           }
-       }
-       if(noMatch)
-       {
-           return -1;
-       }
-       else
-       {
-           return index;
-       }
+    boolean noMatch = true;  
+    
+    for(String foodName : foods)
+    {
+        if(foodName.toUpperCase().contains(searchFood))
+        {
+            System.out.println("Food: " + foodName);
+            noMatch = false;
+        }
+    }
+    if(noMatch)
+    {
+         System.out.println("No foods match the parameter.");
+    }
    }
-    
-    
-}
+} 
