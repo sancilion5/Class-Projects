@@ -59,6 +59,7 @@ public class ShoppingTrip
         }
     }
     
+    //List all food in the array
     public void listAllFoods()
     {
         if(foods.size() <= 0)
@@ -73,4 +74,12 @@ public class ShoppingTrip
            }
         }
     }
+
+    //list Foods with matching name
+    /*
+    public void listFoodMatching(String searchFood)
+    {
+        
+    }
+    */
 }
