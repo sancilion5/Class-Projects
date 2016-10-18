@@ -89,7 +89,20 @@ public class ShoppingTrip
 
     //list Foods with matching name
     public void listFoodMatching(String searchFood)
+   {
+    boolean noMatch = true;  
+    
+    for(String foodName : foods)
     {
-       
+        if(foodName.toUpperCase().contains(searchFood))
+        {
+            System.out.println("Food: " + foodName);
+            noMatch = false;
+        }
     }
+    if(noMatch)
+    {
+         System.out.println("No foods match the parameter.");
+    }
+   }
 }
