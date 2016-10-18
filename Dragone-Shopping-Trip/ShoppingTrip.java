@@ -17,7 +17,19 @@ public class ShoppingTrip
     public ShoppingTrip()
     {
         //New Foods Array Instance
-        foods = new ArrayList();
+        foods = new ArrayList();        
+    }
+    
+    public void QuickList()
+    {
+        ArrayList<String> foods = new ArrayList<>();
+        foods.add("Shrimp Scampi");
+        foods.add("Popcorn Shrimp");
+        foods.add("Chicken");
+        foods.add("Chicken and Shrimp Lo Mein");
+        foods.add("Shrimp Tempura");
+        foods.add("Chicken Tempura");
+        foods.add("Chicken Nuggets");
     }
     
     //Returns the number of food
@@ -76,10 +88,8 @@ public class ShoppingTrip
     }
 
     //list Foods with matching name
-    /*
     public void listFoodMatching(String searchFood)
     {
-        
+       
     }
-    */
 }
