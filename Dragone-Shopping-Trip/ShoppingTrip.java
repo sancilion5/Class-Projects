@@ -44,4 +44,8 @@ public class ShoppingTrip
             System.out.println("NO food found at index " + index);
         }
     }
-}
+    
+    //Lists food
+    public String listFood(int index)
+    {
+        if(index >= 0 & 
