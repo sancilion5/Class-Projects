@@ -14,6 +14,11 @@ public class Card
     {
         setDetails(year, player);
     }
+    
+    public Card()
+    {
+        setDetails(1997, "Anthony Dragone");
+    }
 
     /**
      * @return Returns the Player's Name

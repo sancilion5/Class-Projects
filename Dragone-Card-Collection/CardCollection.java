@@ -30,8 +30,7 @@ public class CardCollection
     //Checks to see if the card index is valid
     public boolean indexValid(int index)
     {
-        boolean validity;
-        validity = true;
+        boolean validity = true;
         if(index <= 0)
         {
             System.out.println("Index cannot be negative: " + index);
@@ -72,6 +71,7 @@ public class CardCollection
         }
     }
     
+    //list the indicated card
     public void listCard(int index)
     {
         if(indexValid(index))
@@ -84,6 +84,7 @@ public class CardCollection
         }
     }
     
+    //lists all cards in the collection
     public void listAllCards()
     {
         if(cards.size() > 0)
@@ -99,9 +100,48 @@ public class CardCollection
         }
     }
     
+    //Searches through cards for cards with a specific player
     public void listByPlayer(String player)
     {
-        boolean found;
-        found = false;
+        boolean found = false;
+        for(Card card : cards)
+        {
+            if(card.getPlayer().toLowerCase().trim().contains(player.toLowerCase().trim()))
+            {
+                System.out.println(card.getDetails());
+                found = true;
+            }
+        }
+        if(found != true)
+        {
+            System.out.println("NO cards found for player: " + player);
+        }
+    }
+    
+    //looks through cards for cards with a specific year
+    public void listByYear(int year)
+    {
+        boolean found = false;
+        for(Card card : cards)
+        {
+            if(card.getYear() == year)
+            {
+                System.out.println(card.getDetails());
+                found = true;
+            }
+        }
+        if(found != true)
+        {
+            System.out.println("NO cards found for year: " + year);
+        }
+    }
+    
+    public void findFirstOfPlayer(String searchString)
+    {
+        int index = 0;
+        boolean searching = true;
+        for(searching = true; index < cards.size();)
+        {
+        }
     }
 }
