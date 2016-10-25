@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Card()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Card\r\n
+comment1.params=playerName\ playerYear
+comment1.target=Card(java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getPlayer()
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment3.params=
+comment3.target=int\ getYear()
+comment4.params=
+comment4.target=void\ getDetails()
+comment5.params=newPlayer\ newYear
+comment5.target=void\ setDetails(java.lang.String,\ int)
+numComments=6
