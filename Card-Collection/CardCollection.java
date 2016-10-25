@@ -136,12 +136,33 @@ public class CardCollection
         }
     }
     
-    public void findFirstOfPlayer(String searchString)
+    public void findFirstOfPlayer(String searchString, int index)
     {
-        int index = 0;
+        index = 0;
         boolean searching = true;
-        for(searching = true; index < cards.size();)
+        
+        while(searching = true && index < cards.size())
         {
+           if(cards.get(index).getPlayer().toUpperCase().contains(searchString))
+           {
+               searching = false;
+           }
+           else
+           {
+               index++;
+           }
+        }
+        if(searching = true)
+        {
+            System.out.println("NO player card for: " +searchString);
+        }
+        else
+        {
+            System.out.println("Player card for: " +searchString+ " at index: "+index);
+        }
+        {
+            System.out.println("Player matching your input was found at index number " +index);
+            index++;
         }
     }
 }
