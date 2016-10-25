@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=collectorName
+comment0.target=CardCollection(java.lang.String)
+comment1.params=
+comment1.target=int\ getNumberOfCards()
+comment1.text=\r\n\ @return\ Returns\ the\ number\ of\ cards\ in\ the\ collection.\r\n
+comment2.params=index
+comment2.target=boolean\ indexValid(int)
+comment3.params=card
+comment3.target=void\ addCard(Card)
+comment4.params=index
+comment4.target=void\ removeCard(int)
+comment5.params=index
+comment5.target=void\ listCard(int)
+comment6.params=
+comment6.target=void\ listAllCards()
+comment7.params=player
+comment7.target=void\ listByPlayer(java.lang.String)
+numComments=8
